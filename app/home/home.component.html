@@ -1,0 +1,29 @@
+<ActionBar title="RadCalendar 📆" class="action-bar">
+</ActionBar>
+
+<RadCalendar
+	[eventSource]="calendarEvents" 
+	
+	eventsViewMode="Inline" 
+	selectionMode="Single" 
+	viewMode="Month" 
+	transitionMode="Stack"
+	locale="en-US" 
+	
+	(dateSelected)="onDateSelected($event)" 
+	(dateDeselected)="onDateDeselected($event)" 
+	(navigatedToDate)="onNavigatedToDate($event)" 
+	(navigatingToDateStarted)="onNavigatingToDateStarted($event)"
+	(viewModeChanged)="onViewModeChanged($event)"
+	></RadCalendar>
+	<!-- Event view mode can be one of "None", "Inline" or "Popover" -->
+	<!-- Selection mode can be one of "None", "Single", "Multiple" or "Range" -->
+	<!-- View mode can be one of "Week", "Month", "MonthNames", "Year" or "Day" -->
+
+	<!-- Available transition modes
+		 http://docs.telerik.com/devtools/nativescript-ui/Controls/Angular/Calendar/transition-modes
+	 -->
+
+	<!-- For styling the calendar, please go through this part in the docs
+		 http://docs.telerik.com/devtools/nativescript-ui/Controls/Angular/Calendar/styling
+	 -->
